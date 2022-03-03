@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/images/logo-larq _1.svg" type="image/x-icon">   
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <link rel="stylesheet" href="../assets/css/header.css">
+    <link rel="stylesheet" href="../assets/css/styles_2.css">
+    <link rel="stylesheet" href="../assets/css/side.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <title>LARQ </title>
+</head>
+
+<body>
+    <header class="page_1">
+        <div class="left_menu logo">
+            <a href="/">
+                <img src="../assets/images/logo-larq _1.svg" alt="">
+            </a>
+        </div>
+        <div class="right_menu">
+            <a class="right_menu_anchor" href="">
+                Home
+            </a>
+            <a class="right_menu_anchor" href="">
+                About
+            </a>
+            <a class="right_menu_anchor" href="">
+                Bottles
+            </a>
+            <a class="right_menu_anchor" href="">
+                Blog
+            </a>
+            <a class="right_menu_anchor" href="">
+                Contact
+            </a>
+            <a class="login" href="">
+                Login
+            </a>
+
+            <button class="ham_menu" id="ham_menu" href="">
+                <i data-feather="menu"></i>
+            </button>
+        </div>
+    </header>
+
+    <main class="main_page_2">
+        <div class="upper_circle">
+            <span class="circle_span">
+                
+            </span>
+        </div>
+
+        <div class="bottle_center bottle_bottom">
+            <img src="../assets/images/bottle_three_by_four.svg" alt="">
+         
+        </div>
+    </main>
+
+    <div class="side_icon" id="side_icon">
+        <div class="side_icon_menu">
+            <div class="close_icon" id="close_icon">
+                <i onclick="this.parentNode.parentNode.parentNode.style.display='none'"  data-feather="x" ></i>
+            </div>
+            <div class="mob_menu">
+                <a class="right_menu_anchor_mob" href="">
+                    Home
+                </a>
+                <a class="right_menu_anchor_mob" href="">
+                    About
+                </a>
+                <a class="right_menu_anchor_mob" href="">
+                    Bottles
+                </a>
+                <a class="right_menu_anchor_mob" href="">
+                    Blog
+                </a>
+                <a class="right_menu_anchor_mob" href="">
+                    Contact
+                </a>
+                <a class="login_mob " href="">
+                    Login
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="side_buttons">
+        <div class="button_stack hide" id="hidden_menu">
+           <div class="pages">
+            Page 1  <a  class="iconbutton" href="../index.html">
+                <i data-feather="maximize" ></i>
+            </a>
+           </div>
+           <div class="pages">
+            Page 2  <a  class="iconbutton" href="../pages/screen_2.html">
+                <i data-feather="maximize" ></i>
+            </a>
+           </div>
+           <div class="pages">
+            Page 3  <a  class="iconbutton" href="../pages/screen_3.html">
+                <i data-feather="maximize" ></i>
+            </a>
+           </div>
+           <div class="pages">
+            Page 4  <a  class="iconbutton" href="../pages/screen_4.html">
+                <i data-feather="maximize" ></i>
+            </a>
+           </div>
+        </div>
+        <div class="button_plus">
+            <button  class="main_btn">
+                <i onclick="menuShow()" class="plus" id="plus" data-feather="plus" ></i>
+                <i onclick="menuHide()" class="minus" id="minus" data-feather="minus" ></i>
+            </button>
+        </div>
+
+    </div>
+
+
+    <script src="../assets/js/larq.js" ></script>
+</body>
+</html>

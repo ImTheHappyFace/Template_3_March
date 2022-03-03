@@ -1,0 +1,79 @@
+.side_buttons{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+
+.button_stack{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.iconbutton{
+    width:50px;
+    height:50px;
+    border-radius: 100%;
+    background: linear-gradient(180deg, #E9C46B 0%, #F3A261 100%);
+    box-shadow: 1px 0px 25px #aaaaaa;
+    display: inline-block;
+    margin: 0px 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    }
+
+   .iconbutton svg{
+       color: white;
+   } 
+
+.main_btn{
+    width:60px;
+    height:60px;
+    background: linear-gradient(180deg, #E9C46B 0%, #F3A261 100%);
+    border-radius: 50%;
+}
+
+.minus{
+    display: none;
+}
+
+.show{
+    position: static ;
+    bottom: 70px ;
+    transition: 1.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+
+.hide{
+   position: fixed;
+   bottom: -100%;
+}
+
+.pages{
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button_plus{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.main_btn{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_btn svg{
+    color: white;
+
+}
+
