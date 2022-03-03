@@ -1,9 +1,9 @@
 feather.replace()
 
-// document.getElementById('ham_menu').
-//     addEventListener('click',function(){
-//         document.getElementById('side_icon').style.display = "block"
-//     })
+document.getElementById('ham_menu').
+    addEventListener('click',function(){
+        document.getElementById('side_icon').style.display = "block"
+    })
 
 
 
