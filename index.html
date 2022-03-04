@@ -15,6 +15,14 @@
     <title>LARQ </title>
 </head>
 
+<style>
+    .header{
+        position: fixed;
+        z-index: 9;
+        top: 542px;
+    }
+</style>
+
 <body data-barba="wrapper">
     <div class="load-container">
         <div class="loading-screen"></div>
@@ -79,46 +87,37 @@
         </div>
 
     </div>
-
-    <div class="side_buttons">
-        <div class="button_stack hide" id="hidden_menu">
-           <div class="pages">
-            Page 1  <a  class="iconbutton" href="../index.html">
-                <i data-feather="maximize" ></i>
-            </a>
-           </div>
-           <div class="pages">
-            Page 2  <a  class="iconbutton" href="../pages/screen_2.html">
-                <i data-feather="maximize" ></i>
-            </a>
-           </div>
-           <div class="pages">
-            Page 3  <a  class="iconbutton" href="../pages/screen_3.html">
-                <i data-feather="maximize" ></i>
-            </a>
-           </div>
-        </div>
-        <div class="button_plus">
-            <button  class="main_btn">
-                <i onclick="menuShow()" class="plus" id="plus" data-feather="plus" ></i>
-                <i onclick="menuHide()" class="minus" id="minus" data-feather="minus" ></i>
-            </button>
-        </div>
-
-    </div>
     <main class="main_paige_1" data-barba="container" data-barba-namespace="about-section">
-        <div class="bottle_center bottle_cap">
+        <div class="bottle_center bottle_cap header">
             <img src="./assets/images/bootlecap.svg" alt="">
         </div>
         <div class="bottle_center circle">
-            <span class="circle_span"></span>
+            <span class="circle_span link"></span>
         </div>
+
+        <div class="tag_and_button">
+            <div class="main_tag">
+                Self Cleaning bottle in 60 Seconds
+            </div>
+            <div class="sub_tag">
+                Hit refresh with the intelligently clean bottle built for adventure.
+            </div>
+            <div class="btn_yellow">
+                <button>
+                    Know More
+                </button>
+            </div>
+        </div>
+
+
+
+
         <div class="bottle_center bottle_bottom">
             <img src="./assets/images/bottle_body.svg" alt="">
         </div>
     </main>
 
- 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js" defer></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://unpkg.com/@barba/core"></script>
     <script
@@ -127,6 +126,7 @@
     ></script>
     <script src="./assets/js/barba.js"></script>
     <script src="./assets/js/larq.js" ></script>
+    <script src="./script.js"></script>
 
 </body>
 
