@@ -5,16 +5,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./assets/images/logo-larq _1.svg" type="image/x-icon">   
+    <link rel="shortcut icon" href="./assets/images/logo-larq _1.svg" type="image/x-icon">  
+    
+    <link rel="stylesheet" href="../assets/css/side.css"> 
     <link rel="stylesheet" href="../assets/css/common.css">
     <link rel="stylesheet" href="../assets/css/header.css">
-    <link rel="stylesheet" href="../assets/css/styles_2.css">
-    <link rel="stylesheet" href="../assets/css/side.css">
-    <script src="https://unpkg.com/feather-icons"></script>
+   
     <title>LARQ </title>
 </head>
 
-<body>
+<body data-barba="wrapper">
+    <div class="load-container">
+        <div class="loading-screen"></div>
+    </div>
     <header class="page_1">
         <div class="left_menu logo">
             <a href="/">
@@ -22,19 +25,19 @@
             </a>
         </div>
         <div class="right_menu">
-            <a class="right_menu_anchor" href="">
+            <a class="right_menu_anchor" href="javascript:void(0)">
                 Home
             </a>
-            <a class="right_menu_anchor" href="">
+            <a class="right_menu_anchor" href="javascript:void(0)">
                 About
             </a>
-            <a class="right_menu_anchor" href="">
+            <a class="right_menu_anchor" href="javascript:void(0)">
                 Bottles
             </a>
-            <a class="right_menu_anchor" href="">
+            <a class="right_menu_anchor" href="javascript:void(0)">
                 Blog
             </a>
-            <a class="right_menu_anchor" href="">
+            <a class="right_menu_anchor" href="javascript:void(0)">
                 Contact
             </a>
             <a class="login" href="">
@@ -47,18 +50,6 @@
         </div>
     </header>
 
-    <main class="main_page_2">
-        <div class="upper_circle">
-            <span class="circle_span">
-                
-            </span>
-        </div>
-
-        <div class="bottle_center bottle_bottom">
-            <img src="../assets/images/bottle_three_by_four.svg" alt="">
-         
-        </div>
-    </main>
 
     <div class="side_icon" id="side_icon">
         <div class="side_icon_menu">
@@ -106,11 +97,6 @@
                 <i data-feather="maximize" ></i>
             </a>
            </div>
-           <div class="pages">
-            Page 4  <a  class="iconbutton" href="../pages/screen_4.html">
-                <i data-feather="maximize" ></i>
-            </a>
-           </div>
         </div>
         <div class="button_plus">
             <button  class="main_btn">
@@ -120,6 +106,25 @@
         </div>
 
     </div>
+
+    <main class="main_page_2" data-barba="container" data-barba-namespace="about-section">
+        <div class="upper_circle">
+            <span class="circle_spans">
+                
+            </span>
+        </div>
+
+        <div class="bottle_center bottle_bottom" style="margin-top: -50px;">
+            <img src="../assets/images/bottle_three_by_four.svg" alt="">
+         
+        </div>
+
+    </main>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
+    <script src="../assets/js/barba.js"></script>
+
 
 
     <script src="../assets/js/larq.js" ></script>
