@@ -1,97 +1,105 @@
-.main_page_3{
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Inter";
+}
+
+
+.main_container{
+    height: 100vh;
+    background: url('../images/bh_full.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: calc(224px - 80px);
-    flex-direction: column;
-}
-
-.circle_span{
-    display: inline-block;
-    width: 330px;
-    height: 330px;
-    border: 4px solid #13395B;
-    border-radius: 50%;
 }
 
 
-.bottle_bottom img{
-    width: 171px;
-    transform: matrix(-1, 0, 0, 1, 0, 0);
-}
 
-.tag_and_button{
-    width: 536px;
-    display: flex;
-    justify-content: center;
+.text_outer{
     position: fixed;
-    top: 305px;
-    flex-direction: column;
-    align-items: center;
+    top: 170px;
+    z-index: 100;
+    left: 280px;
+    font-size: 124px;
+    letter-spacing: 0.215em;
+    color: #FFFFFF;
+    width: 800px;
     text-align: center;
+    font-style: italic;
+    font-weight: 700;
 }
 
-.main_tag{
-    font-size: 52px;
-    line-height: 67px;
-    color: #13395B;
-
+.img_slant{
+    display: flex;
+    justify-content: center;
+    margin-top: -90px;
 }
 
-.sub_tag{
+.img_slant img{
+    transform: scale(0.85);
+}
+
+.cap_slant{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.cap_slant img{
+    position: absolute;
+    top: -3em;
+    left: 282.7px;
+    z-index: 2;
+    transform: scale(0.85);
+}
+
+.sub_heading{
+    text-align: center;
+    font-style: italic;
+    font-weight: 500;
     font-size: 16px;
-    line-height: 19px;
-    color: #333333;
-    margin: 16px 0;
+    text-align: center;
+    letter-spacing: 0.215em;
+    margin-top: -30px;
+    color: #FFFFFF;
+    margin-bottom: 33px;
 }
 
-.btn_yellow button{
-    background: linear-gradient(180deg, #E9C46B 0%, #F3A261 100%);
-    border-radius: 6px;
-    width: 120px;
-    height: 35px;
-    border: none;
-    color: #333333;
+.sub_heading span{
+    display: block;
+    margin-bottom: 6px;
+}
+
+.center_button{
+    display: flex;
+    justify-content: center;
+
+}
+
+.clean,
+.it,
+.all{
+    display: inline-block;
+}
+
+.center_button button{
+    width: 251px;
+    height: 48px;
+    background: #1C5C50;
+    border-radius: 18px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
     font-size: 18px;
-    line-height: 22px;
+    letter-spacing: 0.045em;
+
+    color: #FFFFFF;
+    border: none;
+    outline: none;
     cursor: pointer;
-}
-
-@media screen and (max-width:550px) {
-    .sub_tag {
-        font-size: 12px;
-        line-height: 19px;
-    }
-
-    .tag_and_button {
-        width: 450px;
-        top: 360px;
-    }
-
-    .main_tag {
-        font-size: 32px;
-        line-height: 37px;
-    }
-}
-
-@media screen and (max-width:450px) {
-    .circle_span{
-        width: 280px;
-        height: 280px;
-    }
-
-    .tag_and_button{
-        width: 320px;
-        top: 330px;
-    }
-
-    .main_tag{
-        font-size: 23px;
-        line-height: 26px;
-    }
-    .sub_tag{
-        line-height: 14px;
-    }
 
 }
-
