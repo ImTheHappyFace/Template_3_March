@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+body{
+    font-family: 'Lato','sans-serif';
+}
+
+main{
+    padding: 20px 0;
+    font-family: 'Lato';
+}
+
+.top{
+    display: flex;
+}
+.left{
+    flex: 1 0 30%;
+    margin-left: 60px;
+    font-family: 'Lato';
+font-style: italic;
+font-weight: 900;
+font-size: 40px;
+line-height: 66px;
+color: #13395B;
+}
+.right{
+    flex: 1 0 70%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 40px;
+}
+
+.one,.two,.three,.four{
+    flex: 1 0 45%;
+    position: relative;
+    height: 209px;
+}
+
+.numbers{
+    position: absolute;
+    font-size: 180px;
+    opacity: .2;
+    top: -200px;
+}
+
+.text-head{
+    margin-top: 18px;
+    padding-left: 9px;
+    color: #13395B;
+    font-size: 28px;
+}
+
+.text-sub{
+  
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #969696;
+    margin-top: -10px;
+    display: block;
+}
+
+
+.bottom{
+    display:flex;
+    flex-wrap: wrap;
+    padding: 0 60px;
+}
+
+.a,.b,.c,.d,.e,.f{
+    flex: 1 0 30%;
+    height: 180px;
+    text-align: center;
+    position: relative;
+    /* border: 1px solid black; */
+}
+
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.center-text{
+    position: absolute;
+    color: #13395B;
+    left: 50%;
+    top: 50%;
+    translate: transform;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 600;
+}
+
+
+/* Animation */
+.blinking {
+    -webkit-animation: 1s blink ease infinite;
+    -moz-animation: 1s blink ease infinite;
+    -ms-animation: 1s blink ease infinite;
+    -o-animation: 1s blink ease infinite;
+    animation: 1s blink ease infinite;
+    display: inline-block;
+    font-size: 60px;
+    font-weight: 900;
+    
+  }
+  
+  @keyframes blink {
+    from, to {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+  
+  @-moz-keyframes blink {
+    from, to {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+  
+  @-webkit-keyframes blink {
+    from, to {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+  
+  @-ms-keyframes blink {
+    from, to {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+  
+  @-o-keyframes blink {
+    from, to {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+
+
+  @media only screen and (min-width: 1500px) {
+    main {
+      padding: 30px 15vw;
+    }
+  }
+
+
+  @media only screen and (max-width: 1100px) {
+   .top{
+    flex-direction: column;
+   }
+
+   .right{
+    padding: 0 60px;
+   }
+
+   .center-text{
+    font-size: 15px;
+   }
+
+   
+  }

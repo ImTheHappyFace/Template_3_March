@@ -1,0 +1,49 @@
+body{
+    padding: 0px;
+}
+
+.main-container{
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
+
+.bottle-container{
+    background: linear-gradient(to right, #4A5A58, #3E4E4E,#172C2D,#173031);
+    height: calc(90vh - 60px);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Poppins','sans-serif';
+    font-size: 60px;
+    z-index: 10;
+}
+
+.image-1{
+    height: 600px;
+    position: absolute;
+}
+
+.bottle-1{
+    left: 0;
+}
+
+.bottle-4{
+    right: 0;
+}
+
+.bottle-2{
+    left: 33%;
+    bottom: -100px;
+}
+
+.bottle-3{
+    right: 45%;
+    top: -107px;
+}

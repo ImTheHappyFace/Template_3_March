@@ -1,0 +1,95 @@
+
+
+
+
+
+
+/* main content */
+
+.main_paige_1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: calc(224px - 55px);
+    flex-direction: column;
+}
+
+.bottle_cap img{
+    width: 143px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.circle_span{
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    border: 4px solid #13395B;
+    border-radius: 50%;
+}
+
+
+
+.bottle_bottom img{
+    width: 171px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    margin-top: 60px;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:550px) {
+
+        .header{
+            top: 536px !important;
+        }
+
+        .main_paige_1{
+            margin-top: 14vh;
+        }
+
+        .circle_span{
+            width: 250px;
+            height: 250px;
+        }
+
+        .tag_and_button {
+            margin-top: -82px;
+        }
+
+        .bottle_center{
+            margin-top: 40px;
+        }
+
+        .tag_and_button {
+            margin-top: -36px !important;
+        }
+
+        /* .bottle_bottom img{
+            margin-top: 229px !important;
+        } */
+}
+
+@media screen and (max-width:450px) {
+    .tag_and_button {
+        margin-top: -42px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
